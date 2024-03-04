@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivu</title>
+    <script src="tehtava.js"></script>
+    <link rel="stylesheet" href="tehtava.css">
+</head>
+<body>
+    <div class="div1" id="result">
+        <h1>Tehtävä 1</h1>
+        <P>Anna kolme numeroa ja paina nappia Järjestä luvut.<br> Ohjelma laittaa ne järjestykseen<br></P>
+        <form action="index.html" method="post">
+        <label for="nro">Anna 1.numero:</label> 
+        <input type="number" name="nro" id="num1"><br>
+        <label for="nro2">Anna 2.numero</label> 
+        <input type="number" name="nro2" id="num2"><br>
+        <label for="nro3">Anna 3.numero:</label>
+        <input type="number" name="nro3" id="num3"><br>
+        <button onclick="sortNumbers()">Järjestä Luvut</button>
+        </form>
+        
+    </div>
+    
+    <div class="div2">
+        <h1>Tehtävä 2</h1>
+        <p>Anna 5 lukua ja ohjelma etsii niistä suurimman.</p>
+        <form action="index.html" method="post">
+            <p>Anna 1.luku: <input type="text" id="luku1"></p>
+            <p>Anna 2.luku: <input type="text" id="luku2"></p>
+            <p>Anna 3.luku: <input type="text" id="luku3"></p>
+            <p>Anna 4.luku: <input type="text" id="luku4"></p>
+            <p>Anna 5.luku: <input type="text" id="luku5"></p>
+            <button type="button" name="button" onclick="tehtava2()">Suurin numero</button>
+        </form>
+    </div>
+
+    <div class="div2">
+        <h1>Tehtävä 3</h1>
+        <p>Anna joku luku, ja ohjelma kertoo onko antamasi luku parillinen vai pariton.</p>
+        <p>Anna luku <input type="text" id="arvo"></p>
+        <button type="button" name="button" onclick="tehtava3()">Tarkista</button>
+    </div>
+</body>
+</html>
